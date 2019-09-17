@@ -32821,7 +32821,6 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     this.get = this.get.bind(this);
     this.post = this.post.bind(this);
     this.put = this.put.bind(this);
-    this.del = this.del.bind(this);
     this.remove = this.remove.bind(this);
   }
 
@@ -32858,14 +32857,11 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
   post() {
     this.props.post(this.state.name, this.state.num);
+    this.getAll();
   }
 
   put() {
     this.props.put(this.state.id, this.state.name, this.state.num);
-  }
-
-  del() {
-    this.props.del(this.state.id);
   }
 
   render() {
@@ -32890,24 +32886,25 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     }, "Contact list"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       type: "button",
       onClick: this.get
-    }, "Contact info"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    }, "Get contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       type: "button",
       onClick: this.post
     }, "Add contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       type: "button",
       onClick: this.put
-    }, "Edit contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      type: "button",
-      onClick: this.del
-    }, "Remove contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.status), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.header), this.props.data.map(e => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, "Edit contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.status), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.header), this.props.data.map(e => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       key: e._id
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       onClick: () => {
         this.currentUser(e._id, e.name, e.num);
       }
-    }, "Contact Id: ", e._id, " name: ", e.name, " number: ", e.num), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    }, "name: ", e.name, "; number: ", e.num, ";"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       onClick: () => this.remove(e._id)
-    }, "Remove")))));
+    }, "Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      onClick: () => {
+        this.currentUser(e._id, e.name, e.num);
+      }
+    }, "Contact info")))));
   }
 
 }

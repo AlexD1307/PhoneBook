@@ -14,7 +14,6 @@ class App extends React.Component {
         this.get = this.get.bind(this)
         this.post = this.post.bind(this)
         this.put = this.put.bind(this)
-        this.del = this.del.bind(this)
         this.remove = this.remove.bind(this)
     }
 
@@ -47,12 +46,10 @@ class App extends React.Component {
     }
     post() {
         this.props.post(this.state.name, this.state.num)
+        this.getAll()
     }
     put() {
         this.props.put(this.state.id, this.state.name, this.state.num)
-    }
-    del() {
-        this.props.del(this.state.id)
     }
 
     render() {
@@ -67,16 +64,16 @@ class App extends React.Component {
                 </div>
                 <div>
                     <button type="button" onClick={this.getAll}>Contact list</button>
-                    <button type="button" onClick={this.get}>Contact info</button>
+                    <button type="button" onClick={this.get}>Get contact</button>
                     <button type="button" onClick={this.post} >Add contact</button>
                     <button type="button" onClick={this.put}>Edit contact</button>
-                    <button type="button" onClick={this.del}>Remove contact</button>
                     <div>{this.props.status}</div>
                     <div>{this.props.header}</div>
                     {
                         this.props.data.map(e => <div key={e._id}>
-                            <p onClick={() => { this.currentUser(e._id, e.name, e.num) }}>Contact Id: {e._id} name: {e.name} number: {e.num}</p>
+                            <p onClick={() => { this.currentUser(e._id, e.name, e.num) }}>name: {e.name}; number: {e.num};</p>
                             <button onClick={() => this.remove(e._id)}>Remove</button>
+                            <button onClick={() => { this.currentUser(e._id, e.name, e.num) }}>Contact info</button>
                         </div>)
                     }
                 </div>
