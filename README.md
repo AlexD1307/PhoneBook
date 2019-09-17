@@ -20,6 +20,7 @@ Your app is ready to be deployed!
 
 ## How to use
 
-1) To see/delete contact you need to find id in contact list then search/delete it by id;
-2) To add you need to enter the contact name and number than press 'Add contact';
-3) To edit contact you need to enter contact id, editing name, editing number, than press 'Edit contact'
+1) To add contact you need to enter the contact name and number than press 'Add contact';
+2) To edit contact you need to press 'Contact info' than edit name and/or number and press 'Edit contact';
+3) To get contact enter contact id or press 'Contact info' than press 'Get contact';
+4) To see contact list press 'Contact list';
