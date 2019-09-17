@@ -24,3 +24,4 @@ Your app is ready to be deployed!
 2) To edit contact you need to press 'Contact info' than edit name and/or number and press 'Edit contact';
 3) To get contact enter contact id or press 'Contact info' than press 'Get contact';
 4) To see contact list press 'Contact list';
+5) To remove contact press 'Remove'
