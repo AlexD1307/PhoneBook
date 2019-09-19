@@ -1,6 +1,6 @@
 ## PhoneBook
 
-## Run the project
+## Run project
 
 To run the project you should:
 1) Install the mongoDB database in the following link: https://www.mongodb.com/download-center/community,
