@@ -1,5 +1,6 @@
 ## PhoneBook
 
+## ATTENTION! All these settings are for Windows only!
 ## Run project
 
 To run the project you should:
