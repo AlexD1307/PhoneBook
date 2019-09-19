@@ -3,11 +3,11 @@
 ## Run project
 
 To run the project you should:
-1) Install the stable version of Node.js at the following link: https://nodejs.org,
-2) Install the mongoDB database at the following link: https://www.mongodb.com/download-center/community,
-3) Run the command 'npm run build' in the terminal,
-4) Run the command 'npm start' in the terminal,
-5) Open in your browser 'http://localhost:3000'.
+1) Install the stable version of Node.js at the following link: [https://nodejs.org](https://nodejs.org),
+2) Install the mongoDB database at the following link: [https://www.mongodb.com/download-center/community](https://www.mongodb.com/download-center/community),
+3) Run the command ```npm run build``` in the terminal,
+4) Run the command ```npm start``` in the terminal,
+5) Open in your browser [http://localhost:3000](http://localhost:3000).
 
 ## How to use
 
