@@ -14,7 +14,7 @@ To run the project you should:
 4) To see contact list press 'Contact list';
 5) To remove contact press 'Remove'
 
-In the project directory, you can run:
+## In the project directory, you can run:
 
 ### `npm start`
 
